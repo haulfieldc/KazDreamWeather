@@ -39,6 +39,12 @@ android {
 }
 
 dependencies {
+
+    val koinComposeVersion = "3.4.1"
+    val coilVersion = "2.2.2"
+    val accompanistVersion = "0.28.0"
+    val navVersion = "2.5.3"
+
     implementation(project(":shared"))
     implementation("androidx.compose.ui:ui:1.3.1")
     implementation("androidx.compose.ui:ui-tooling:1.3.1")
@@ -46,4 +52,9 @@ dependencies {
     implementation("androidx.compose.foundation:foundation:1.3.1")
     implementation("androidx.compose.material:material:1.3.1")
     implementation("androidx.activity:activity-compose:1.6.1")
+
+    implementation("io.insert-koin:koin-androidx-compose:$koinComposeVersion")
+    implementation("io.coil-kt:coil-compose:$coilVersion")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:$accompanistVersion")
+    implementation("androidx.navigation:navigation-compose:$navVersion")
 }
